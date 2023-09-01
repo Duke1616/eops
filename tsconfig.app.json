@@ -1,0 +1,20 @@
+{
+  "extends": "@vue/tsconfig/tsconfig.dom.json",
+  "include": ["src/**/*", "src/**/*.vue", "env.d.ts", "auto-imports.d.ts", "components.d.ts"],
+  "exclude": ["src/**/__tests__/*"],
+  "compilerOptions": {
+    "composite": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"],
+      "xterm-addon-attach": ["../addons/xterm-addon-attach"],
+      "xterm-addon-fit": ["../addons/xterm-addon-fit"],
+      "xterm-addon-image": ["../addons/xterm-addon-image"],
+      "xterm-addon-search": ["../addons/xterm-addon-search"],
+      "xterm-addon-serialize": ["../addons/xterm-addon-serialize"],
+      "xterm-addon-web-links": ["../addons/xterm-addon-web-links"],
+      "xterm-addon-webgl": ["../addons/xterm-addon-webgl"]
+    },
+    "moduleResolution": "node"
+  }
+}
