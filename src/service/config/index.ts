@@ -14,7 +14,8 @@ if (import.meta.env.PROD) {
   BASE_URL = 'http://152.136.185.210:5000'
 } else {
   // BASE_URL = 'http://127.0.0.1:8150/keyauth/api/v1'
-  BASE_URL = 'http://10.31.0.184:6690'
+  // BASE_URL = 'http://10.31.0.184:6690'
+  BASE_URL = 'http://127.0.0.1:8081'
 }
 
 // console.log(BASE_URL)

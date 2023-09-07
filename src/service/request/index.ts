@@ -52,7 +52,7 @@ class HyRequest {
   request<T>(config: HYRequestConfig): Promise<{
     code: number
     data: T
-    msg: string
+    message: string
   }> {
     return new Promise((resolve) => {
       // 单独的请求拦截
@@ -79,35 +79,35 @@ class HyRequest {
   get<T>(config: HYRequestConfig): Promise<{
     code: number
     data: T
-    msg: string
+    message: string
   }> {
     return this.request<T>({ ...config, method: 'get' })
   }
   post<T>(config: HYRequestConfig): Promise<{
     code: number
     data: T
-    msg: string
+    message: string
   }> {
     return this.request<T>({ ...config, method: 'post' })
   }
   delete<T>(config: HYRequestConfig): Promise<{
     code: number
     data: T
-    msg: string
+    message: string
   }> {
     return this.request<T>({ ...config, method: 'delete' })
   }
   put<T>(config: HYRequestConfig): Promise<{
     code: number
     data: T
-    msg: string
+    message: string
   }> {
     return this.request<T>({ ...config, method: 'put' })
   }
   patch<T>(config: HYRequestConfig): Promise<{
     code: number
     data: T
-    msg: string
+    message: string
   }> {
     return this.request<T>({ ...config, method: 'patch' })
   }
